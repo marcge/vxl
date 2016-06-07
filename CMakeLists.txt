@@ -13,6 +13,8 @@ ENDIF( COMMAND CMAKE_POLICY )
 # CMake 2.8 stuff
 SET( CMAKE_LEGACY_CYGWIN_WIN32 0 ) # Remove when CMake >= 2.8.4 is required
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 # Use @rpath on OS X
 IF( POLICY CMP0042 )
   CMAKE_POLICY(SET CMP0042 NEW)
